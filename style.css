@@ -266,3 +266,9 @@ body{
 .animation{
     animation: leaving 1s 1  forwards;
 }
+
+
+.enter{
+    animation: entering 2s 1  forwards;
+
+}
