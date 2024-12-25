@@ -1,8 +1,201 @@
 #nav{
 
-    background-color: black;
+    background-image: linear-gradient(to right, black , grey);
     width: 100%;
-    height: 5vh;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
     
+ align-items: center;
+ display: relative;
+position: fixed;
+ 
+}
+*{
+    margin: none;
+    padding: none;
+}
+.one{
+    color: white;
+    box-shadow: inset;
+   margin-right: 10vw;
+ 
+    width:fit-content;
+    text-align: center;
 
 }
+
+.one:hover{
+    
+    cursor: pointer;
+   background-color: grey;
+   
+   
+  
+}
+
+.bb{
+    margin-bottom: 3vw;
+}
+#login{
+    background-color: white;
+    border-radius: 25%;
+    color: black;
+    width: 4vw;
+    height: 3vw;
+    padding-top: 0.2vw;
+    padding-right: 0.2vw;
+    padding-left: 0.2vw;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 10vh;
+    top: 3vh;
+    font-size: 2vh;
+
+
+}
+
+body{
+    background-color: black;
+}
+
+.containtext{
+    display: flex;
+  
+   
+    justify-content: center;
+    
+    height: 5vh;
+  padding-top: 15vh;
+  background: linear-gradient( to right , black, white);
+    
+
+
+   
+    
+}
+
+.typing {
+    width: 30ch; /* Adjust this to match your text length */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation: typing 4s steps(24), 1 , blink 0.6s step-end infinite;
+    color: white;
+    font-size: 3vh;
+ 
+    
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 30ch;
+    }
+  }
+
+  @keyframes blink {
+    from {
+      border-right-color: white;
+    }
+    to {
+      border-right-color: transparent;
+    }}
+
+
+
+    .history{
+       
+        width: 17vw;
+        height: fit-content;
+       background-color: transparent ;
+        border-radius: 30px;
+        margin-left: 2vh;
+     
+
+    }
+    h1{ padding-left: 2vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        color: white;
+    }
+
+    .content{
+        color: white;
+        padding-bottom: 2vh;
+        padding-right: 1vh;
+
+
+    }
+        
+    .mainn{
+        position: absolute;
+        width: 30vw;
+   opacity: 0.3;
+    }
+
+    .history{
+        position: absolute;
+       
+    
+    }
+.phover{
+
+    font-size: 3vw;
+    text-decoration: dashed;
+    text-decoration: underline;
+
+
+}
+
+.maincon{
+    display: flex;
+    margin-top: 3vh;
+}
+
+.next{
+
+    position: absolute;
+    left: 35vw;
+    width: 30vw;
+    opacity: 0.3;
+}
+
+.about{
+
+    position: absolute;
+    left: 35vw;
+
+    width: 17vw;
+    height: fit-content;
+}
+
+
+
+.final{
+
+    position: absolute;
+    left: 70vw;
+    width: 30vw;
+    opacity: 0.3;
+}
+
+.events{
+
+    position: absolute;
+    left: 70vw;
+
+    width: 17vw;
+    height: fit-content;
+}
+
+
+
+
+  .containertwo{
+    border-radius: 25px;
+
+  }
