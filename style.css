@@ -84,7 +84,8 @@ body{
     animation: typing 4s steps(24), 1 , blink 0.6s step-end infinite;
     color: white;
     font-size: 3vh;
- 
+    display: fixed;
+ z-index: 10;
     
   }
 
@@ -199,3 +200,69 @@ body{
     border-radius: 25px;
 
   }
+
+  /* Basic styling for the text */
+.present{
+    position: fixed;
+    background-color:rgba(3,10,79, 1);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+}
+.opacity{
+
+    opacity: 0.1;
+
+}
+.hide{
+    visibility: hidden;
+}
+
+.index {
+    font-size: 10vh;
+    position: fixed;
+    z-index: 20;
+    color: white;
+    animation: entering 1s forwards; 
+    margin-top: 80vh;
+    margin-right: 30vw;
+    cursor: pointer;
+}
+
+/* Define the entering animation */
+@keyframes entering {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes leaving {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.7;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0;
+    }
+
+
+    
+}
+.animation{
+    animation: leaving 1s 1  forwards;
+}
