@@ -5,9 +5,13 @@
     text-decoration: none;
 }
 
+body{
+    position: relative;
+}
+
 .navbar {
     width: 100%;
-    height: 25vh;
+    height: 6vw;
     align-items: center;
     display: flex;
 }
@@ -21,6 +25,7 @@
     justify-content: center;
     display: flex;
     width: 100%;
+
 }
 
 .navLeft a img {
@@ -29,6 +34,12 @@
 
 .navMid {
     width: 50%;
+}
+
+.navMid a {
+
+    font-size: 22px;
+
 }
 
 .navRight {
@@ -40,7 +51,7 @@
 
 .navOptions {
     display: flex;
-    gap: 12%;
+    justify-content: space-between;
 }
 
 /* body {
@@ -119,4 +130,43 @@
 
 .donate-btn {
     animation: glowing 2s infinite;
+}
+
+
+.lowerFooter{
+    display: flex;
+}
+
+.leftLF{
+    width: 60%;
+}
+.midLF{
+    width: 20%;
+}
+.rightLF{
+    width: 20%;
+}
+
+.upperFooter{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.leftUF{
+    padding: 4%;
+    width: 33%;
+    border-right: solid 0.1px #9AA0A6;
+}
+.midUF{
+    padding: 4%;
+    width: 34%;
+    border-right: solid 0.1px #9AA0A6;
+}
+.rightUF{
+    padding: 4%;
+    width: 33%;
+}
+
+.logoFooter a img{
+    width: 30%;
 }
