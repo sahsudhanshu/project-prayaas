@@ -1,0 +1,122 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 25vh;
+    align-items: center;
+    display: flex;
+}
+
+.navLeft {
+    display: flex;
+    width: 25%;
+}
+
+.navLeft a {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.navLeft a img {
+    width: 40%;
+}
+
+.navMid {
+    width: 50%;
+}
+
+.navRight {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+
+.navOptions {
+    display: flex;
+    gap: 12%;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+} */
+
+.donate-btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ff6b6b, #f94d6a);
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    box-shadow: 0px 8px 15px rgba(249, 77, 106, 0.3);
+}
+
+.donate-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 12px 20px rgba(249, 77, 106, 0.5);
+}
+
+.donate-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.donate-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), transparent, transparent);
+    transform: rotate(45deg);
+    transition: all 0.4s ease;
+    opacity: 0;
+    z-index: 0;
+}
+
+.donate-btn:hover::before {
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px rgba(249, 77, 106, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(249, 77, 106, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(249, 77, 106, 0.6);
+    }
+}
+
+.donate-btn {
+    animation: glowing 2s infinite;
+}
