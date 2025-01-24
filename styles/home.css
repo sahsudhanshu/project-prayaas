@@ -161,32 +161,26 @@ body {
 
 .lowerFooter {
     display: flex;
-    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f4150;
+    color: white;
+    height: 2rem;
 }
 
-.leftLF {
-    width: 60%;
-}
-
-.midLF {
-    width: 20%;
-}
-
-.rightLF {
-    width: 20%;
-}
 
 .upperFooter {
+    background-color: #3D5467;
     display: flex;
 }
 
 .leftUF {
 
     padding-left: 5%;
-  
+
     width: 33%;
     border-right: solid 0.1px #9AA0A6;
-    
+
     justify-content: center;
 }
 
@@ -194,7 +188,7 @@ body {
 
     width: 34%;
     border-right: solid 0.1px #9AA0A6;
-   display: flex;
+    display: flex;
     justify-content: center;
 
 
@@ -203,7 +197,7 @@ body {
 .rightUF {
 
     padding-left: 5%;
-  
+
     width: 33%;
 
     justify-content: center;
@@ -217,14 +211,12 @@ body {
 
     margin-bottom: 4vh;
     list-style-type: square;
-    color: #343635;
+    color: #ffffff;
 }
 
 .heading {
     margin-bottom: 5vh;
-
     font-size: 4vh;
-    opacity: 60%;
 
 }
 
@@ -234,8 +226,6 @@ body {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-color: white;
-
-
     background-color: #d7d8db;
     display: flex;
     justify-content: center;
@@ -245,7 +235,7 @@ body {
 }
 
 .text {
-    color: #292929;
+    color: #ffffff;
     font-size: 3vh;
 
 
@@ -287,20 +277,20 @@ body {
     width: 30vw;
     height: 10vw;
 }
-.m-l-2{
+
+.m-l-2 {
     margin: 1%;
 }
 
 .headcon {
 
     font-size: 4vh;
-    opacity: 50%;
 
 }
 
 .text {
     display: inline-block;
-    color: #a7a7a8;
+    color: #ffffff;
 }
 
 .phone {
@@ -312,7 +302,8 @@ body {
     margin-top: 4vh;
 
 }
-.section1{
+
+.section1 {
     padding-left: 5%;
 }
 
@@ -323,16 +314,115 @@ body {
     margin-bottom: 2%;
 }
 
-.container{
+.container {
     background-image: url('.././src/images/home-background.jpg');
     height: 700px;
 }
 
-.button-group-main{
+.button-group-main {
     margin-top: 2%;
 }
 
-.text-main{
+.text-main {
     color: white;
     font-size: 3rem;
+}
+
+
+
+/* principle message  */
+.principle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    border: 3px solid #d4af37;
+    /* Golden Border */
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Sticker/Icon */
+.sticker {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #d4af37;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sticker img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Card Header */
+.card h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2b6cb0;
+    margin-top: 50px;
+    /* Space for the sticker */
+    margin-bottom: 20px;
+}
+
+/* Card Text */
+.card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Highlighted Words */
+.highlight {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 2rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .sticker {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sticker img {
+        width: 30px;
+        height: 30px;
+    }
 }
