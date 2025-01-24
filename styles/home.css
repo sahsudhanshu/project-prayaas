@@ -162,6 +162,10 @@ body{
     padding: 4%;
     width: 34%;
     border-right: solid 0.1px #9AA0A6;
+  display:  flex;
+  justify-content: center;
+ 
+
 }
 .rightUF{
     padding: 4%;
@@ -170,4 +174,80 @@ body{
 
 .logoFooter a img{
     width: 30%;
+}
+.con{
+
+    margin-bottom: 4vh;
+    list-style-type: square; 
+    color: #343635;
+}
+.heading{
+    margin-bottom: 5vh;
+   
+    font-size: 5vh;
+    opacity: 60%;
+     
+}
+.email{
+    width: 15vw;
+    height: 7vh;
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+ border-color: white;
+
+
+    background-color:#d7d8db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.text{
+    color:#292929;
+    font-size: 3vh;
+   
+
+}
+.group{
+    display: flex;
+}
+.takeal{
+    background-color: black;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 4vw;
+    height: 7.5vh;
+}
+.logos{
+    display: flex;
+}
+.logos-box{
+    margin-top: 10vh;
+}
+.icont{
+    margin-top: 2vh;
+    margin-right: 1.5vh;
+}
+.icon{
+    margin-right: 1vh;
+}
+.logoFooter{
+    margin-top: 2vh;
+    width: 50vw;
+    height: 10vw;
+}
+.headcon{
+    font-size: 5vh;
+    opacity: 50%;
+}
+.text{
+    display: inline-block;
+    color: #a7a7a8;
+}
+.phone{
+    display: inline-block;
+}
+.hr{
+    margin-top: 4vh;
 }
