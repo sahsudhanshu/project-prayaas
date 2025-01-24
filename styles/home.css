@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-    height: 3.5vw;
+    height: 5.5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ body {
 
 .navLeft {
     display: flex;
-    width: 20%;
+    width: 33%;
 }
 
 .navLeft a {
@@ -40,11 +40,11 @@ body {
 }
 
 .navLeft a img {
-    width: 52%;
+    width: 33%;
 }
 
 .navMid {
-    width: 60%;
+    width: 50%;
 }
 
 .navMid a {
@@ -56,7 +56,7 @@ body {
 .navRight {
     display: flex;
     justify-content: center;
-    width: 20%;
+    width: 17%;
 }
 
 
@@ -158,19 +158,111 @@ body {
     animation: glowing 2s infinite;
 }
 
+footer {
+    background-color: #0d1117;
+    padding: 40px 20px;
+}
 
-.lowerFooter {
+.footer-container {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.footer-logo-section {
+    max-width: 300px;
+}
+
+.footer-logo-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #feb47b;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+    color: #feb47b;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin: 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a img {
+    width: 20px;
+    height: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.footer-socials a img:hover {
+    transform: scale(1.2);
+}
+
+/* .lowerFooter {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2f4150;
+    background-color: #212c4a;
     color: white;
     height: 2rem;
 }
 
 
 .upperFooter {
-    background-color: #3D5467;
+    background-color: #35446e;
     display: flex;
 }
 
@@ -301,7 +393,7 @@ body {
 .hr {
     margin-top: 4vh;
 
-}
+} */
 
 .section1 {
     padding-left: 5%;
@@ -425,4 +517,250 @@ body {
         width: 30px;
         height: 30px;
     }
+}
+
+
+/* Coordinator */
+/* Section Container */
+.coord-section {
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.coord-section h2 {
+    font-size: 2.5rem;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+/* Faculty Card */
+.faculty-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Faculty Image */
+.faculty-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+    /* Golden Border */
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Name and Designation */
+.faculty-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.faculty-card p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 5px 0 15px;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #2b6cb0;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.contact-info a:hover {
+    background: #d4af37;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .coord-section h2 {
+        font-size: 2rem;
+    }
+
+    .faculty-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .faculty-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .faculty-card p {
+        font-size: 1rem;
+    }
+
+    .contact-info a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+.coordinator {
+    display: flex;
+    /* background-color: #f4e4b4; */
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.carousel {
+    background: #EEE;
+}
+.carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+.carousel-cell.is-selected {
+    background: #ED2;
+}
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+
+.stories-section {
+    padding: 50px;
+    background: #f4f4f9;
+    text-align: center;
+}
+
+.stories-section h2 {
+    font-size: 2.5rem;
+    color: #2b6cb0;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.stories-section h2::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Slider Container */
+.slider-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.student-card {
+    width: 300px;
+    flex: 0 0 300px;
+    margin: 0 15px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.student-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.student-card .card-content {
+    padding: 20px;
+}
+
+.student-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.student-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.impact-main{
+    margin-bottom: 2%;
+    
+}
+
+.stories-heading h2{
+    margin-left: 2%;
+    margin-bottom: 3%;
+    font-size: 2.5rem;
+}
+
+.icon-line {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+}
+
+.icon-line::before,
+.icon-line::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 3px;
+    background: #ff7e5f;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.icon-line span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #2b6cb0;
 }
