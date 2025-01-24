@@ -180,24 +180,32 @@ body {
 }
 
 .leftUF {
-    padding: 4%;
+
+    padding-left: 5%;
+  
     width: 33%;
     border-right: solid 0.1px #9AA0A6;
+    
+    justify-content: center;
 }
 
 .midUF {
-    padding: 4%;
+
     width: 34%;
     border-right: solid 0.1px #9AA0A6;
-    display: flex;
+   display: flex;
     justify-content: center;
 
 
 }
 
 .rightUF {
-    padding: 4%;
+
+    padding-left: 5%;
+  
     width: 33%;
+
+    justify-content: center;
 }
 
 .logoFooter a img {
@@ -256,6 +264,7 @@ body {
 
 .logos {
     display: flex;
+    gap: 2vh;
 }
 
 .logos-box {
@@ -272,8 +281,9 @@ body {
 }
 
 .logoFooter {
+
     margin-top: 2vh;
-    width: 50vw;
+    width: 30vw;
     height: 10vw;
 }
 
@@ -290,7 +300,7 @@ body {
 }
 
 .phone {
-    
+
     display: inline-block;
 }
 
@@ -302,4 +312,7 @@ body {
 .section1 img {
     width: 100%;
 
+}
+.Prayaas_logo{
+    padding-left: 0px;
 }
