@@ -136,6 +136,7 @@ body{
 
 .lowerFooter{
     display: flex;
+    margin-top: 5vh;
 }
 
 .leftLF{
@@ -238,8 +239,10 @@ body{
     height: 10vw;
 }
 .headcon{
+
     font-size: 5vh;
     opacity: 50%;
+
 }
 .text{
     display: inline-block;
