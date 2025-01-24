@@ -3,38 +3,47 @@
     padding: 0%;
     list-style-type: none;
     text-decoration: none;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
 }
 
-body{
+body {
     position: relative;
 }
 
 .navbar {
-    z-index: 1;
+    height: 3.5vw;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 6vw;
-    align-items: center;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(248, 248, 248);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 .navLeft {
     display: flex;
-    width: 25%;
+    width: 20%;
 }
 
 .navLeft a {
-    justify-content: center;
+    justify-content: left;
     display: flex;
     width: 100%;
 
 }
 
 .navLeft a img {
-    width: 40%;
+    width: 52%;
 }
 
 .navMid {
-    width: 50%;
+    width: 60%;
 }
 
 .navMid a {
@@ -46,24 +55,39 @@ body{
 .navRight {
     display: flex;
     justify-content: center;
-    width: 25%;
+    width: 20%;
 }
 
 
 .navOptions {
     display: flex;
     justify-content: space-between;
+    color: black;
 }
 
-/* body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f9f9f9;
-} */
+.navOptions li a {
+    font-size: 1.5em;
+    color: black;
+}
+
+.navMenu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navMenu a:hover {
+    color: #fff;
+    background-color: #f56c6c;
+    box-shadow: 0 4px 6px rgba(245, 108, 108, 0.4);
+    transform: translateY(-2px);
+}
+
 
 .donate-btn {
     position: relative;
@@ -134,40 +158,48 @@ body{
 }
 
 
-.lowerFooter{
+.lowerFooter {
     display: flex;
 }
 
-.leftLF{
+.leftLF {
     width: 60%;
 }
-.midLF{
-    width: 20%;
-}
-.rightLF{
+
+.midLF {
     width: 20%;
 }
 
-.upperFooter{
+.rightLF {
+    width: 20%;
+}
+
+.upperFooter {
     display: flex;
-    /* justify-content: space-around; */
 }
 
-.leftUF{
+.leftUF {
     padding: 4%;
     width: 33%;
     border-right: solid 0.1px #9AA0A6;
 }
-.midUF{
+
+.midUF {
     padding: 4%;
     width: 34%;
     border-right: solid 0.1px #9AA0A6;
 }
-.rightUF{
+
+.rightUF {
     padding: 4%;
     width: 33%;
 }
 
-.logoFooter a img{
+.logoFooter a img {
     width: 30%;
+}
+
+.section1 img{
+    width: 100%;
+
 }
