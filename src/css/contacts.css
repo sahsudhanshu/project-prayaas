@@ -7,17 +7,17 @@
 }
 
 body {
-    position: relative;
+    /* position: relative; */
     background-color: #F1EDEE;
 }
 
 
 /* header start */
 .navbar {
-    height: 4rem;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 3rem;
+    /* position:fixed; */
+    /* top: 0;
+    left: 0; */
     width: 100%;
     display: flex;
     justify-content: space-between;
