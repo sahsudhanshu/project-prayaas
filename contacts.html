@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/contacts.css">
+    <link rel="stylesheet" href="./src/css/contacts.css">
     <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
-    <title>Prayaas</title>
+    <title>Contacts - Prayaas</title>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
     <header>
-
         <div class="navbar">
             <div class="navLeft">
                 <a href="#">
@@ -22,11 +21,11 @@
             </div>
             <div class="navMid navMenu">
                 <ul class="navOptions">
-                    <li class="navOption"><a href="">Home</a></li>
+                    <li class="navOption"><a href="./index.html">Home</a></li>
                     <li class="navOption"><a href="">Our Impacts</a></li>
                     <li class="navOption"><a href="">Events</a></li>
                     <li class="navOption"><a href="">Team Prayaas</a></li>
-                    <li class="navOption"><a href="">Contacts</a></li>
+                    <li class="navOption"><a href="./contacts.html">Contacts</a></li>
                 </ul>
             </div>
             <div class="navRight">
@@ -36,9 +35,43 @@
             </div>
         </div>
     </header>
-    <main>
 
+    <main>
+        <div class="hero">
+            <div>
+                <h1>Get in Touch</h1>
+                <p>We would love to hear from you. Reach out to us for any queries or collaboration opportunities.</p>
+            </div>
+        </div>
+        <div>
+
+            <div class="contact-section">
+                <div class="map-section">
+                    <h2>Our Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.3204002521793!2d81.76977277500801!3d25.427549677563384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3985332156509e25%3A0x3f396199707a3d7f!2sPrayaas%20IIITA!5e0!3m2!1sen!2sin!4v1738077105041!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <button>Submit</button>
+                    <div class="info-section">
+                        <div><i class="fas fa-map-marker-alt"></i> <a
+                                href="https://maps.app.goo.gl/xmZYi3DNqU9WS3xy5">IIIT Allahabad, Jhalwa, Prayagraj,
+                                India</a></div>
+                        <div><i class="fas fa-envelope"></i><a href="mailto:prayaas@iiita.ac.in">prayaas@iiita.ac.in</a>
+                        </div>
+                        <div><i class="fas fa-phone-alt"></i><a href="tel:+91-9876543210">+91-9876543210</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo-section">
