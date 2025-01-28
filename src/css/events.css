@@ -183,9 +183,10 @@ body {
     border-color: #ecf0f1;
     gap: 7vw;
     padding-top: 5vh;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Added box shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01); /* Added box shadow */
     position: relative;
     margin-top: 5vh;
+    background-color: #f0f5f1; /* Slightly darker background */
 }
 
 /* Event Section Styling */
@@ -195,10 +196,11 @@ body {
     width: 20%; /* 3 items per row */
     margin-bottom: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.09);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    background-color: #edf0f5;
+    border-radius: 20px;
    
       
 }
@@ -221,6 +223,7 @@ body {
     height: 100%;
     object-fit: cover;
     transition: opacity 0.5s ease;
+
 }
 
 /* Add fade-in animation on load */
@@ -277,6 +280,7 @@ body {
 .text-overlay h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+
 }
 
 .text-overlay p {
@@ -286,6 +290,7 @@ body {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+
     .container {
         padding: 0 10px;
         flex-direction: column; /* Stack items vertically on mobile */
@@ -321,15 +326,17 @@ body {
 }
 
 
+
 /* General Reset */
 .centertwo {
+
     width: 16vw;
     text-align: left;
     font-size: 5vh;
     color: #2c3e50; /* Darker shade for better contrast */
     padding-left: 2vw;
     font-weight: bold; /* Make the text thicker */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add subtle shadow for depth */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 /* General Reset */
 .center{
@@ -356,6 +363,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     margin-top: 2rem; /* Space between the button and text */
     outline: none; /* Remove outline */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 /* Hover Effect for the Button */
@@ -407,13 +417,17 @@ body {
 .button{
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding-bottom: 2vh;
 }
 .heading{
     font-size: 3vh;
     text-align: left;
+    padding-left: 0.5vw;
     font-family: 'Roboto', sans-serif; /* Use a modern font */
     color: #2c3e50; /* Darker shade for better contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.01); 
+    /* Add subtle shadow for depth */
 }
 
 .text_small {
@@ -424,12 +438,12 @@ body {
 
     color: #7f8c8d; /* Slightly darker shade for better readability */
     font-family: 'Open Sans', sans-serif; /* Use a clean font */
-    font-size: 1.5vw; /* Increase font size for better readability */
+    font-size: 1.4vw; /* Increase font size for better readability */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 .arrow{
     position: absolute;
-    bottom: 3vh;
+    bottom: 2.4vh;
     left: 18vw;
 }
 .mainimage{
@@ -487,13 +501,43 @@ body {
     border-radius: 20px;
     position: absolute;
     top: 40vh;
-    left: 30vw;
-    background: linear-gradient(135deg, #bdc3c7, #2c3e50);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    left: 25vw;
+    background: linear-gradient(135deg, #b3cde0, #f1e3dd); /* Lighter gradient colors */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     padding: 20px;
+    color: #333; /* Darker text color for better readability */
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+}
+.hidden{
     visibility: hidden;
+}
+
+.hide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.inside_heading {
+    font-size: 4vh;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center; /* Center align the heading */
+    background-color: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background */
+    padding: 10px 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.inside_text {
+    font-size: 2vh;
+    color: #ecf0f1;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
 }
 
 .hide:hover {
@@ -511,7 +555,8 @@ body {
     background-color: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background */
     padding: 10px 20px; /* Add padding for better spacing */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  */
+    /* Add a subtle shadow */;
 }
 
 .inside_text {
@@ -519,7 +564,7 @@ body {
     color: #ecf0f1;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); */
     display: flex;
     justify-content: center;
 }
@@ -573,4 +618,6 @@ body{
     transform: scale(1.3);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-
+.blur{
+    filter: blur(5px);
+}
