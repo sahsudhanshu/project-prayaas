@@ -336,6 +336,7 @@ body {
 
 
     text-align:left;
+    padding-left: 0.5vw;
     font-size: 2vh;
     color: #7f8c8d;
 }
@@ -492,6 +493,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     padding: 20px;
+    visibility: hidden;
 }
 
 .hide:hover {
