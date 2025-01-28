@@ -14,12 +14,15 @@ boxes.forEach((box) => {
         hide.classList.toggle('hidden');
         
     });
+    
 });
 
 // Hide .hide element if clicking anywhere else on the page
 document.addEventListener('click', () => {
 
     hide.classList.add('hidden');
+    hide.classList.add()
+    blurred.classList.remove('blur')
 
 });
 
