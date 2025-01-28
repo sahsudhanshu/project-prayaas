@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main container */
+.maincontainer {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.Heading_one {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #003366; /* A deeper blue for emphasis */
+    text-transform: uppercase;
+}
+
+/* Container for image and text */
+.contain_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Space between the image and text */
+}
+
+/* Image Styling */
+.image {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on the image */
+.image:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Text styling */
+.contain_info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    flex: 1;
+    margin-top: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .contain_info {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .image {
+        width: 80%; /* Make image larger on smaller screens */
+        margin-bottom: 1rem; /* Add space between image and text */
+    }
+
+    .Heading_one {
+        font-size: 1.8rem; /* Adjust heading size for small screens */
+    }
+
+    .contain_info p {
+        font-size: 1rem; /* Adjust text size for better readability on smaller screens */
+    }
+}
