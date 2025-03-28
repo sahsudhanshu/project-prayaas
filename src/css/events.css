@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-    height: 3.5vw;
+    height: 5.5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@ body {
 
 .navLeft {
     display: flex;
-    width: 20%;
+    width: 33%;
 }
 
 .navLeft a {
@@ -40,11 +40,11 @@ body {
 }
 
 .navLeft a img {
-    width: 52%;
+    width: 33%;
 }
 
 .navMid {
-    width: 60%;
+    width: 50%;
 }
 
 .navMid a {
@@ -56,7 +56,7 @@ body {
 .navRight {
     display: flex;
     justify-content: center;
-    width: 20%;
+    width: 17%;
 }
 
 
@@ -157,13 +157,6 @@ body {
 .donate-btn {
     animation: glowing 2s infinite;
 }
-/* Reset some default styles */
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Body and overall font */
 body {
@@ -172,7 +165,8 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
 }
 
 /* Container for the content */
@@ -183,17 +177,20 @@ body {
     border-color: #ecf0f1;
     gap: 7vw;
     padding-top: 5vh;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01); /* Added box shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+    /* Added box shadow */
     position: relative;
     margin-top: 5vh;
-    background-color: #f0f5f1; /* Slightly darker background */
+    background-color: #f0f5f1;
+    /* Slightly darker background */
 }
 
 /* Event Section Styling */
 .republic_day {
     width: 45vw;
     position: relative;
-    width: 20%; /* 3 items per row */
+    width: 20%;
+    /* 3 items per row */
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.09);
@@ -201,21 +198,24 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #edf0f5;
     border-radius: 20px;
-   
-      
+
+
 }
 
 /* Hover effect for republic_day */
 .republic_day:hover {
-    transform: scale(1.05); /* Slightly enlarge the card */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Increase shadow on hover */
 }
 
 /* Styling for images */
 .republic_image {
     position: relative;
     width: 100%;
-    height: 300px; /* Fixed height for uniformity */
+    height: 300px;
+    /* Fixed height for uniformity */
 }
 
 .image {
@@ -244,6 +244,7 @@ body {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -272,6 +273,7 @@ body {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -293,11 +295,13 @@ body {
 
     .container {
         padding: 0 10px;
-        flex-direction: column; /* Stack items vertically on mobile */
+        flex-direction: column;
+        /* Stack items vertically on mobile */
     }
 
     .republic_day {
-        width: 100%; /* Full width on mobile */
+        width: 100%;
+        /* Full width on mobile */
         margin-bottom: 20px;
     }
 
@@ -311,14 +315,16 @@ body {
         height: 250px;
     }
 }
-.heading_Recent{
+
+.heading_Recent {
     display: flex;
- display: center;
+    display: center;
     padding-top: 10vh;
 
 
 }
-.event{
+
+.event {
     width: 29vw;
     height: 30vh;
     background-color: #f4f4f4;
@@ -333,59 +339,85 @@ body {
     width: 16vw;
     text-align: left;
     font-size: 5vh;
-    color: #2c3e50; /* Darker shade for better contrast */
+    color: #2c3e50;
+    /* Darker shade for better contrast */
     padding-left: 2vw;
-    font-weight: bold; /* Make the text thicker */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    font-weight: bold;
+    /* Make the text thicker */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow for depth */
 }
+
 /* General Reset */
-.center{
+.center {
 
 
-    text-align:left;
+    text-align: left;
     padding-left: 0.5vw;
     font-size: 2vh;
     color: #7f8c8d;
 }
+
 /* General Button Styling */
 .know-more-btn {
-    padding: 12px 30px; /* Padding to make the button larger */
-    font-size: 1.2rem; /* Slightly bigger font size */
-    background: linear-gradient(90deg, #3498db, #8e44ad); /* Gradient background from blue to purple */
+    padding: 12px 30px;
+    /* Padding to make the button larger */
+    font-size: 1.2rem;
+    /* Slightly bigger font size */
+    background: linear-gradient(90deg, #3498db, #8e44ad);
+    /* Gradient background from blue to purple */
     color: white;
-    border: 2px solid transparent; /* Initial transparent border */
-    border-radius: 30px; /* Rounded corners */
+    border: 2px solid transparent;
+    /* Initial transparent border */
+    border-radius: 30px;
+    /* Rounded corners */
     cursor: pointer;
-    text-transform: uppercase; /* Uppercase text */
+    text-transform: uppercase;
+    /* Uppercase text */
     font-weight: bold;
-    letter-spacing: 1px; /* Spacing between letters */
-    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    margin-top: 2rem; /* Space between the button and text */
-    outline: none; /* Remove outline */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    letter-spacing: 1px;
+    /* Spacing between letters */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition for all properties */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow for depth */
+    margin-top: 2rem;
+    /* Space between the button and text */
+    outline: none;
+    /* Remove outline */
+    display: flex;
+    /* Use flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
 }
 
 /* Hover Effect for the Button */
 .know-more-btn:hover {
-    background: linear-gradient(90deg, #2980b9, #9b59b6); /* On hover, the gradient shifts */
-    transform: translateY(-5px); /* Slight upward movement */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
-    border-color: #fff; /* White border on hover */
+    background: linear-gradient(90deg, #2980b9, #9b59b6);
+    /* On hover, the gradient shifts */
+    transform: translateY(-5px);
+    /* Slight upward movement */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    /* Stronger shadow on hover */
+    border-color: #fff;
+    /* White border on hover */
 }
 
 /* Focus Effect for the Button (when clicked) */
 .know-more-btn:focus {
     outline: none;
-    border: 2px solid #2980b9; /* Blue border when focused */
+    border: 2px solid #2980b9;
+    /* Blue border when focused */
 }
 
 /* Active State for the Button (when pressed) */
 .know-more-btn:active {
-    transform: translateY(2px); /* Button appears pressed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Reduce the shadow for the pressed effect */
+    transform: translateY(2px);
+    /* Button appears pressed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Reduce the shadow for the pressed effect */
 }
 
 /* Animation for Button (Hover text animation) */
@@ -393,11 +425,15 @@ body {
     0% {
         letter-spacing: 1px;
     }
+
     50% {
-        letter-spacing: 3px; /* Increased spacing for a typing effect */
+        letter-spacing: 3px;
+        /* Increased spacing for a typing effect */
     }
+
     100% {
-        letter-spacing: 1px; /* Return to original spacing */
+        letter-spacing: 1px;
+        /* Return to original spacing */
     }
 }
 
@@ -408,55 +444,71 @@ body {
 
 /* Button Disabled State */
 .know-more-btn:disabled {
-    background: #bdc3c7; /* Light gray background for disabled state */
-    color: #7f8c8d; /* Darker text for disabled state */
-    cursor: not-allowed; /* Cursor change for disabled state */
-    box-shadow: none; /* No shadow for disabled state */
-    border: 2px solid #ecf0f1; /* Light border */
+    background: #bdc3c7;
+    /* Light gray background for disabled state */
+    color: #7f8c8d;
+    /* Darker text for disabled state */
+    cursor: not-allowed;
+    /* Cursor change for disabled state */
+    box-shadow: none;
+    /* No shadow for disabled state */
+    border: 2px solid #ecf0f1;
+    /* Light border */
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     width: 100%;
     padding-bottom: 1.3vh;
 }
-.heading{
+
+.heading {
     font-size: 3vh;
     text-align: left;
     padding-left: 0.5vw;
-    font-family: 'Roboto', sans-serif; /* Use a modern font */
-    color: #2c3e50; /* Darker shade for better contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.01); 
+    font-family: 'Roboto', sans-serif;
+    /* Use a modern font */
+    color: #2c3e50;
+    /* Darker shade for better contrast */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.01);
     /* Add subtle shadow for depth */
 }
 
 .text_small {
     margin-top: 7vw;
-  
-  position: absolute;
-  bottom: 5vh;
 
-    color: #7f8c8d; /* Slightly darker shade for better readability */
-    font-family: 'Open Sans', sans-serif; /* Use a clean font */
-    font-size: 1.4vw; /* Increase font size for better readability */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    position: absolute;
+    bottom: 5vh;
+
+    color: #7f8c8d;
+    /* Slightly darker shade for better readability */
+    font-family: 'Open Sans', sans-serif;
+    /* Use a clean font */
+    font-size: 1.4vw;
+    /* Increase font size for better readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow for depth */
 }
-.arrow{
+
+.arrow {
     position: absolute;
     bottom: 2.4vh;
     left: 18vw;
 }
-.mainimage{
-   padding-top: 6vh;
-   padding-bottom: 50vh;
+
+.mainimage {
+    padding-top: 6vh;
+    padding-bottom: 50vh;
     position: relative;
     width: 100%;
     height: 30vw;
     object-fit: cover;
 }
+
 .ongoinghead {
     position: absolute;
-  
+
     bottom: 20vh;
     left: 35%;
     transform: translateX(-50%);
@@ -471,8 +523,8 @@ body {
     border-radius: 10px;
 
     padding-right: 30px;
-     
-  
+
+
 }
 
 /* Keyframes for fade-in-up animation */
@@ -481,18 +533,21 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
-.image{
+
+.image {
     position: absolute;
     height: 30vw;
     width: 100%;
     padding-bottom: 5vh;
 
 }
+
 .hide {
     text-align: center;
     z-index: 100;
@@ -502,14 +557,19 @@ body {
     position: absolute;
     top: 40vh;
     left: 25vw;
-    background: linear-gradient(135deg, #fff, #f1e3dd); /* Lighter gradient colors */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    background: linear-gradient(135deg, #fff, #f1e3dd);
+    /* Lighter gradient colors */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     padding: 20px;
-    color: #333; /* Darker text color for better readability */
-    font-family: 'Montserrat', sans-serif; /* Modern font */
-    transform: scale(1.3); /* Optional: for a zoom effect */
+    color: #333;
+    /* Darker text color for better readability */
+    font-family: 'Montserrat', sans-serif;
+    /* Modern font */
+    transform: scale(1.3);
+    /* Optional: for a zoom effect */
     animation: fadeIn 1s ease forwards;
 }
 
@@ -518,12 +578,14 @@ body {
         opacity: 0;
         transform: scale(0.5);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
     }
 }
-.hidden{
+
+.hidden {
 
     visibility: hidden;
 
@@ -544,9 +606,9 @@ body {
     justify-content: left;
     padding-left: 1vh;
     text-align: left;
-   padding-left: 3vh;
-   padding-top: 2vh;
-   width: 60vw;
+    padding-left: 3vh;
+    padding-top: 2vh;
+    width: 60vw;
 }
 
 .hide:hover {
@@ -562,17 +624,20 @@ body {
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
     margin-bottom: 20px;
     width: 100%;
-    text-align: center; /* Center align the heading */
-    background-color: rgba(224, 227, 222, 0.5); /* Add a semi-transparent background */
-    padding: 10px 20px; /* Add padding for better spacing */
+    text-align: center;
+    /* Center align the heading */
+    background-color: rgba(224, 227, 222, 0.5);
+    /* Add a semi-transparent background */
+    padding: 10px 20px;
+    /* Add padding for better spacing */
     border-radius: 10px;
     box-shadow: 0px 1px 1px rgba(231, 237, 228)
-    
-    /* Rounded corners *
+        /* Rounded corners *
 /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  */
-    /* Add a subtle shadow */;
+        /* Add a subtle shadow */
+    ;
 
- 
+
 }
 
 
@@ -583,6 +648,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -592,20 +658,23 @@ body {
 .hide {
     animation: fadeInUp 1s ease-out forwards;
 }
-body{
+
+body {
     position: relative;
 }
 
-.inside_p{
+.inside_p {
     width: 40vw;
     color: #000;
     margin-bottom: 2vh;
 }
-.inside_pictures{
-     display: flex;
+
+.inside_pictures {
+    display: flex;
 
 }
-.inside_picture_one{
+
+.inside_picture_one {
 
     width: 20vw;
     height: 10vw;
@@ -615,12 +684,14 @@ body{
 
 
 }
-.like{
+
+.like {
     position: absolute;
     right: 0.3vw;
     top: 0.2vw;
 }
-.text_{
+
+.text_ {
     width: fit-content;
     height: fit-content;
     text-align: center;
@@ -628,7 +699,7 @@ body{
     color: #2c3e50;
     font-family: 'Montserrat', sans-serif;
     padding: 10px 20px;
-   
+
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -641,25 +712,28 @@ body{
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.more_pics{
+
+.more_pics {
     margin-top: 2vh;
     border-radius: 15px;
-  border-color: transparent;
-    background: linear-gradient(135deg,  grey, white);
-     font-size: 1.5vh;
+    border-color: transparent;
+    background: linear-gradient(135deg, grey, white);
+    font-size: 1.5vh;
     height: 4vh;
     width: 5vw;
-    
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.more_pics:hover{
+.more_pics:hover {
     transform: scale(1.3);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-.blur{
+
+.blur {
     filter: blur(1.5px);
 }
+
 footer {
     background-color: #0d1117;
     padding: 40px 20px;
@@ -679,7 +753,8 @@ footer {
 .footer-logo-section {
     max-width: 300px;
 }
-.footer-logo-section p{
+
+.footer-logo-section p {
     font-size: 1.2rem;
 }
 
@@ -755,4 +830,3 @@ footer {
 .footer-socials a img:hover {
     transform: scale(1.2);
 }
-
